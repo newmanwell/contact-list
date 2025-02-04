@@ -1,10 +1,12 @@
+import ContactList from "./ContactList"
 
-function App() {
+const App = () => {
   
 
   return (
     <>
-        
+      <h1>My Favorite Contacts</h1>
+      <ContactList />
     </>
   )
 }
