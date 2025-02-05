@@ -9,7 +9,6 @@ const ContactList = (props) => {
         const response = await fetch('https://fsa-jsonplaceholder-69b5c48f1259.herokuapp.com/users');
         const contactArray = await response.json();
         setAllContacts(contactArray);
-        console.log(contactArray);
       } catch(error) {
         console.log(error);
       }
