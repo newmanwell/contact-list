@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
+import ContactDetails from "./ContactDetails";
 
-const ContactList = () => {
+const ContactList = (props) => {
   const [allContacts, setAllContacts] = useState([]);
   useEffect(() => {
     const getContacts = async() => {
@@ -20,7 +21,7 @@ const ContactList = () => {
     <ol>
       {
         allContacts.map((contact) => {
-          return <li key={ contact.id }>{ contact.name }</li>
+          return <li key={ contact.id } onClick={() => {props.setOneContactDetails(contact)}}>{ contact.name }</li>
         })
       }
     </ol>
