@@ -1,12 +1,16 @@
+import { useState } from "react"
 import ContactList from "./ContactList"
+import ContactDetails from "./ContactDetails"
 
 const App = () => {
-  
+  const [oneContactDetails, setOneContactDetails] = useState({});
 
   return (
     <>
       <h1>My Favorite Contacts</h1>
-      <ContactList />
+      { 
+        oneContactDetails.id ? <ContactDetails oneContactDetails={ oneContactDetails }/> : <ContactList setOneContactDetails={ setOneContactDetails }/>
+      }
     </>
   )
 }
