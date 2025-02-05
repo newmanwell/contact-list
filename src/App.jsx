@@ -9,7 +9,7 @@ const App = () => {
     <>
       <h1>My Favorite Contacts</h1>
       { 
-        oneContactDetails.id ? <ContactDetails /> : <ContactList setOneContactDetails={ setOneContactDetails }/>
+        oneContactDetails.id ? <ContactDetails oneContactDetails={ oneContactDetails }/> : <ContactList setOneContactDetails={ setOneContactDetails }/>
       }
     </>
   )
