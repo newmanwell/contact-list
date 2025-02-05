@@ -1,3 +1,37 @@
 body {
   background-color: blueviolet;
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+section {
+  background-color: rebeccapurple;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+section:hover {
+  transform: scale(1.5);
+  transition-duration: 1000ms;
+}
+
+h2 {
+  text-align: center;
+  color: antiquewhite;
+  padding: 10px;
+  border: 1px solid antiquewhite;
+}
+
+h3, h4 {
+  text-align: center;
+}
